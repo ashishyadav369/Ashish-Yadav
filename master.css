@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&family=Quicksand:wght@300;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: white;
+  min-height: 70vh;
+  width: 100%;
+}
+
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  margin: 0;
+  margin-top: 30vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  font-size: 30px;
+  background-color: #4287f5;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #4287f5;
+  display: flex;
+  vertical-align: center;
+  padding: 5px 8px;
+}
+
+.btn:hover,
+.btn:active {
+  background: #426cf5;
+}
+
+.bi {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+#middle {
+  background: #3b82f6;
+  height: 70vh;
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.about-me {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+#tech-stack {
+  background: white;
+  min-height: 70vh;
+  width: 100%;
+}
+
+.tech {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 4em;
+  text-align: center;
+}
+
+.skills {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.skill {
+  margin: 20px;
+  height: 60px;
+  width: 300px;
+  font-size: 30px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  border: 0px solid white;
+  vertical-align: middle;
+  padding: 20px;
+  ;
+}
+
+.skill:hover,
+.skill:active {
+  background: #f6f5f5;
+  color: #0e4f1f;
+}
+
+.contact {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  color: white;
+  background: #3b82f6;
+  height: 50vh;
+  text-align: center;
+}
+
+.con {
+  margin-top: -70px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bi1 {
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+}
+
+.bi1:hover,
+.bi1:active {
+  color: black;
+}
